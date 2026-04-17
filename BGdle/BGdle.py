@@ -1,326 +1,312 @@
 import tkinter as tk
-from tkinter import ttk
 import random
 
-cards = []
-with open("bg.txt", "r", encoding="utf-8") as f:
-    for line in f:
-        if line.strip():
-            parts = line.strip().split(";")
-            card = {
-                "Name": parts[0],
-                "Tier": int(parts[1]),
-                "Tribe": [t.strip() for t in parts[2].split(",") if t.strip()],
-                "Attack": int(parts[3]),
-                "Health": int(parts[4]),
-                "Keywords": [k.strip() for k in parts[5].split(",") if k.strip()]
-            }
-            cards.append(card)
 
-target = random.choice(cards)
+class BGdleApp:
+    CELL_SIZE = 100
+    CELL_FONT = ("Arial", 9, "bold")
 
-CELL_SIZE = 100
-CELL_FONT = ("Arial", 9, "bold")
+    def __init__(self, root):
+        self.root = root
+        self.root.title("BGdle")
 
-header_visible = False 
+        self.cards = self.load_cards("bg.txt")
+        self.filtered_cards = []
+        self.target = None
+        self.guessed_names = set()
+        self.header_visible = False
 
-root = tk.Tk()
-root.title("BGdle")
+        self.create_menu()
+        self.create_game_ui()
 
-guessed_names=set()
+    # DATA
+    def load_cards(self, filename):
+        cards = []
+        with open(filename, "r", encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    parts = line.strip().split(";")
 
-frame = tk.Frame(root)
-frame.pack(padx=10, pady=10)
+                    mode = parts[6].strip() if len(parts) > 6 else ""
 
-table_container = tk.Frame(root)
-table_container.pack(padx=10, pady=10, fill="both", expand=True)
+                    card = {
+                        "Name": parts[0],
+                        "Tier": int(parts[1]),
+                        "Tribe": [t.strip() for t in parts[2].split(",") if t.strip()],
+                        "Attack": int(parts[3]),
+                        "Health": int(parts[4]),
+                        "Keywords": [k.strip() for k in parts[5].split(",") if k.strip()],
+                        "Mode": mode
+                    }
+                    cards.append(card)
+        return cards
 
-header_container = tk.Frame(table_container)
-header_container.pack(fill="x")
+    # MENU
+    def create_menu(self):
+        self.menu_frame = tk.Frame(self.root)
+        self.menu_frame.pack(fill="both", expand=True)
 
-canvas = tk.Canvas(table_container, height=420)
-canvas.pack(side="left", fill="both", expand=True)
+        tk.Label(self.menu_frame, text="BGdle", font=("Arial", 24, "bold")).pack(pady=20)
 
-scrollbar = tk.Scrollbar(
-    table_container,
-    orient="vertical",
-    command=canvas.yview
-)
-scrollbar.pack(side="right", fill="y")
+        tk.Button(
+            self.menu_frame,
+            text="Solo Mode",
+            width=20,
+            command=lambda: self.start_game(False)
+        ).pack(pady=10)
 
-canvas.configure(yscrollcommand=scrollbar.set)
+        tk.Button(
+            self.menu_frame,
+            text="Include Duos",
+            width=20,
+            command=lambda: self.start_game(True)
+        ).pack(pady=10)
 
-table_frame = tk.Frame(canvas)
-table_window_id = canvas.create_window((0, 0), window=table_frame, anchor="n")
+    def start_game(self, include_duos):
+        self.filtered_cards = [
+            c for c in self.cards
+            if include_duos or c["Mode"] != "Duos"
+        ]
 
-def on_canvas_configure(event):
-    canvas.itemconfigure(table_window_id, width=event.width)
+        if not self.filtered_cards:
+            return
 
+        self.menu_frame.pack_forget()
+        self.game_frame.pack(fill="both", expand=True)
 
-def on_frame_configure(event):
-    canvas.configure(scrollregion=canvas.bbox("all"))
+        self.new_game()
 
-table_frame.bind("<Configure>", on_frame_configure)
-canvas.bind("<Configure>", on_canvas_configure)
+    # GAME UI
+    def create_game_ui(self):
+        self.game_frame = tk.Frame(self.root)
 
-autocomplete_list = tk.Listbox(frame, height=5)
-autocomplete_list = tk.Listbox(
-    frame,
-    height=5,
-    takefocus=False
-)
+        # input
+        self.top_frame = tk.Frame(self.game_frame)
+        self.top_frame.pack(padx=10, pady=10)
 
-autocomplete_list=None
+        self.entry = tk.Entry(self.top_frame, font=("Arial", 14), width=30)
+        self.entry.pack(fill="x", ipady=6)
+        self.entry.bind("<KeyRelease>", self.suggest)
 
-def create_header():
-    HEADER_CELL_HEIGHT = CELL_SIZE // 3
+        self.submit_btn = tk.Button(self.top_frame, text="Guess", command=self.check_guess)
+        self.submit_btn.pack(pady=5)
 
-    header_row = tk.Frame(table_frame)
-    header_row.grid(row=0, column=0, pady=(0, 6))
-    header_row.grid_anchor("center")
+        self.result_label = tk.Label(self.game_frame, text="", font=("Arial", 12))
+        self.result_label.pack(pady=5)
 
-    headers = ["Minion", "Tier", "Tribe", "Attack", "Health", "Keywords"]
+        tk.Button(self.game_frame, text="Back to Menu", command=self.back_to_menu).pack(pady=5)
 
-    for col, text in enumerate(headers):
-        cell = tk.Frame(
-            header_row,
-            width=CELL_SIZE,
-            height=HEADER_CELL_HEIGHT,
-            bg="#333333",
-            relief="solid",
-            borderwidth=1
-        )
-        cell.grid(row=0, column=col, padx=2)
+        # table
+        self.table_container = tk.Frame(self.game_frame)
+        self.table_container.pack(padx=10, pady=10, fill="both", expand=True)
+
+        self.canvas = tk.Canvas(self.table_container, height=420)
+        self.canvas.pack(side="left", fill="both", expand=True)
+
+        scrollbar = tk.Scrollbar(self.table_container, orient="vertical", command=self.canvas.yview)
+        scrollbar.pack(side="right", fill="y")
+
+        self.canvas.configure(yscrollcommand=scrollbar.set)
+
+        self.table_frame = tk.Frame(self.canvas)
+        self.table_window = self.canvas.create_window((0, 0), window=self.table_frame, anchor="n")
+
+        self.table_frame.bind("<Configure>", lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
+        self.canvas.bind("<Configure>", self.center_table)
+
+        self.table_frame.grid_columnconfigure(0, weight=1)
+
+        self.autocomplete_list = None
+
+    # GAME FLOW
+    def new_game(self):
+        self.target = random.choice(self.filtered_cards)
+        self.guessed_names.clear()
+        self.header_visible = False
+
+        for widget in self.table_frame.winfo_children():
+            widget.destroy()
+
+        self.result_label.config(text="")
+        self.entry.delete(0, tk.END)
+        self.submit_btn.config(text="Guess", command=self.check_guess)
+
+    def back_to_menu(self):
+        self.game_frame.pack_forget()
+        self.menu_frame.pack(fill="both", expand=True)
+
+    # UI HELPERS
+    def create_header(self):
+        header_row = tk.Frame(self.table_frame)
+        header_row.grid(row=0, column=0, pady=(0, 6))
+
+        headers = ["Minion", "Tier", "Tribe", "Attack", "Health", "Keywords"]
+
+        for col, text in enumerate(headers):
+            cell = tk.Frame(header_row, width=self.CELL_SIZE, height=30, bg="#333", relief="solid", borderwidth=1)
+            cell.grid(row=0, column=col, padx=2)
+            cell.grid_propagate(False)
+
+            tk.Label(cell, text=text, bg="#333", fg="white").place(relx=0.5, rely=0.5, anchor="center")
+
+    def make_cell(self, parent, text, bg):
+        cell = tk.Frame(parent, width=self.CELL_SIZE, height=self.CELL_SIZE, bg=bg, relief="solid", borderwidth=1)
         cell.grid_propagate(False)
 
-        lbl = tk.Label(
-            cell,
-            text=text,
-            bg="#333333",
-            fg="white",
-            font=("Arial", 9, "bold"),
-            wraplength=CELL_SIZE - 8,
-            justify="center"
+        tk.Label(cell, text=text, bg=bg, font=self.CELL_FONT, wraplength=self.CELL_SIZE - 8).place(
+            relx=0.5, rely=0.5, anchor="center"
         )
-        lbl.place(relx=0.5, rely=0.5, anchor="center")
+        return cell
 
-def make_cell(parent, text, bg):
-    cell = tk.Frame(
-        parent,
-        width=CELL_SIZE,
-        height=CELL_SIZE,
-        bg=bg,
-        relief="solid",
-        borderwidth=1
-    )
-    cell.grid_propagate(False)
+    def center_table(self, event):
+            self.canvas.coords(self.table_window, event.width // 2, 0)
 
-    lbl = tk.Label(
-        cell,
-        text=text,
-        bg=bg,
-        fg="black",
-        font=CELL_FONT,
-        wraplength=CELL_SIZE - 8,
-        justify="center"
-    )
-    lbl.place(relx=0.5, rely=0.5, anchor="center")
+    # AUTOCOMPLETE
+    def suggest(self, event=None):
+        typed = self.entry.get().lower()
 
-    return cell
+        if self.autocomplete_list:
+            self.autocomplete_list.destroy()
+            self.autocomplete_list = None
 
-def suggest(event=None):
-    global autocomplete_list
+        if not typed:
+            return
 
-    typed = entry.get().lower()
+        suggestions = [
+            c["Name"] for c in self.filtered_cards
+            if typed in c["Name"].lower() and c["Name"] not in self.guessed_names
+        ][:5]
 
-    if autocomplete_list:
-        autocomplete_list.destroy()
-        autocomplete_list=None
+        if not suggestions:
+            return
 
-    if not typed:
-        return
+        self.autocomplete_list = tk.Listbox(self.top_frame, height=5)
+        self.autocomplete_list.pack(fill="x")
 
-    suggestions = [
-        c["Name"] for c in cards
-        if typed in c["Name"].lower() and c["Name"] not in guessed_names][:5]
-    if not suggestions:
-        return
+        for s in suggestions:
+            self.autocomplete_list.insert(tk.END, s)
 
-    autocomplete_list = tk.Listbox(frame, height=5, takefocus=False)
-    autocomplete_list.pack(fill="x")
+        self.autocomplete_list.bind("<<ListboxSelect>>", self.select_autocomplete)
 
-    for s in suggestions:
-        autocomplete_list.insert(tk.END, s)
+    def select_autocomplete(self, event):
+        selection = self.autocomplete_list.curselection()
+        if selection:
+            self.entry.delete(0, tk.END)
+            self.entry.insert(0, self.autocomplete_list.get(selection[0]))
+            self.autocomplete_list.destroy()
+            self.autocomplete_list = None
 
-    autocomplete_list.bind("<<ListboxSelect>>", select_autocomplete)
+    # GAME LOGIC
+    def check_guess(self):
+        name_guess = self.entry.get()
 
-    autocomplete_list.pack(fill="x")
-    entry.focus_set()
-
-def select_autocomplete(event):
-    selection = autocomplete_list.curselection()
-    if selection:
-        entry.delete(0, tk.END)
-        entry.insert(0, autocomplete_list.get(selection[0]))
-        autocomplete_list.delete(0, tk.END)
-        autocomplete_list.pack_forget()
-
-def check_guess():
-    global autocomplete_list, submit_btn, target, guessed_names, header_visible
-
-    name_guess = entry.get()
-    guess_card = next((c for c in cards if c["Name"].lower() == name_guess.lower()), None)
-
-    if not guess_card:
-        result_label.config(text="There is no such minion!", fg="red")
-        return
-
-    if guess_card["Name"] in guessed_names:
-        result_label.config(
-            text="You've already guessed this minion in this game!",
-            fg="orange"
+        guess_card = next(
+            (c for c in self.filtered_cards if c["Name"].lower() == name_guess.lower()),
+            None
         )
-        entry.delete(0, tk.END)
-        return
 
-    guessed_names.add(guess_card["Name"])
+        if not guess_card:
+            self.result_label.config(text="There is no such minion!", fg="red")
+            return
 
-    if not header_visible:
-        create_header()
-        header_visible = True
+        if guess_card["Name"] in self.guessed_names:
+            self.result_label.config(text="Already guessed!", fg="orange")
+            return
 
-    for child in table_frame.winfo_children():
-        info = child.grid_info()
-        if not info:
-            continue
-        if info.get("row", 0) != 0:
-            child.grid(row=info["row"] + 1, column=info["column"])
+        self.guessed_names.add(guess_card["Name"])
+        self.entry.delete(0, tk.END)
 
+        if self.autocomplete_list:
+            self.autocomplete_list.destroy()
+            self.autocomplete_list = None
 
-    table_frame.grid_columnconfigure(0, weight=1)
+        self.entry.bind("<Return>", lambda e: self.check_guess())
 
-    row = max(
-        (child.grid_info()["row"] for child in table_frame.winfo_children()),
-        default=0
-    ) + 1
+        if not self.header_visible:
+            self.create_header()
+            self.header_visible = True
 
-    row_frame = tk.Frame(table_frame)
-    row_frame.grid(row=row, column=0, pady=4)
-    row_frame.grid_anchor("center")
+        row = len(self.table_frame.winfo_children())
 
-    entry.delete(0, tk.END)
-    autocomplete_list.pack_forget()
+        row_frame = tk.Frame(self.table_frame)
+        row_frame.grid(row=row, column=0, pady=4)
 
-    name_cell = make_cell(row_frame, guess_card["Name"], "lightgray")
-    name_cell.grid(row=0, column=0, padx=2)
+        self.make_cell(row_frame, guess_card["Name"], "lightgray").grid(row=0, column=0, padx=2)
 
-    if guess_card["Tier"] == target["Tier"]:
-        tier_bg = "green"
-        tier_text = str(guess_card["Tier"])
-    elif guess_card["Tier"] < target["Tier"]:
-        tier_bg = "red"
-        tier_text = f"{guess_card['Tier']} ↑"
-    else:
-        tier_bg = "red"
-        tier_text = f"{guess_card['Tier']} ↓"
+        # Tier
+        if guess_card["Tier"] == self.target["Tier"]:
+            bg = "green"
+            text = str(guess_card["Tier"])
+        elif guess_card["Tier"] < self.target["Tier"]:
+            bg = "red"
+            text = f"{guess_card['Tier']} ↑"
+        else:
+            bg = "red"
+            text = f"{guess_card['Tier']} ↓"
 
-    tier_cell = make_cell(row_frame, tier_text, tier_bg)
-    tier_cell.grid(row=0, column=1, padx=2)
+        self.make_cell(row_frame, text, bg).grid(row=0, column=1, padx=2)
 
-    guess_tribes = set(guess_card["Tribe"])
-    target_tribes = set(target["Tribe"])
+        # Tribe
+        gt = set(guess_card["Tribe"])
+        tt = set(self.target["Tribe"])
 
-    if guess_tribes == target_tribes:
-        tribe_bg = "green"
+        if gt == tt:
+            bg = "green"
+        elif "All" in gt or "All" in tt or gt & tt:
+            bg = "yellow"
+        else:
+            bg = "red"
 
-    elif "All" in guess_tribes or "All" in target_tribes:
-        tribe_bg = "yellow"
+        self.make_cell(row_frame, ", ".join(guess_card["Tribe"]) or "-", bg).grid(row=0, column=2, padx=2)
 
-    elif guess_tribes & target_tribes:
-        tribe_bg = "yellow"
+        # Attack
+        if guess_card["Attack"] == self.target["Attack"]:
+            bg = "green"
+            text = str(guess_card["Attack"])
+        elif guess_card["Attack"] < self.target["Attack"]:
+            bg = "red"
+            text = f"{guess_card['Attack']} ↑"
+        else:
+            bg = "red"
+            text = f"{guess_card['Attack']} ↓"
 
-    else:
-        tribe_bg = "red"
+        self.make_cell(row_frame, text, bg).grid(row=0, column=3, padx=2)
 
-    tribe_text = ", ".join(guess_card["Tribe"]) or "-"
-    tribe_cell = make_cell(row_frame, tribe_text, tribe_bg)
-    tribe_cell.grid(row=0, column=2, padx=2)
+        # Health
+        if guess_card["Health"] == self.target["Health"]:
+            bg = "green"
+            text = str(guess_card["Health"])
+        elif guess_card["Health"] < self.target["Health"]:
+            bg = "red"
+            text = f"{guess_card['Health']} ↑"
+        else:
+            bg = "red"
+            text = f"{guess_card['Health']} ↓"
 
-    if guess_card["Attack"] == target["Attack"]:
-        atk_bg = "green"
-        atk_text = str(guess_card["Attack"])
-    elif guess_card["Attack"] < target["Attack"]:
-        atk_bg = "red"
-        atk_text = f"{guess_card['Attack']} ↑"
-    else:
-        atk_bg = "red"
-        atk_text = f"{guess_card['Attack']} ↓"
+        self.make_cell(row_frame, text, bg).grid(row=0, column=4, padx=2)
 
-    atk_cell = make_cell(row_frame, atk_text, atk_bg)
-    atk_cell.grid(row=0, column=3, padx=2)
+        # Keywords
+        gk = set(guess_card["Keywords"])
+        tk_ = set(self.target["Keywords"])
 
-    if guess_card["Health"] == target["Health"]:
-        hp_bg = "green"
-        hp_text = str(guess_card["Health"])
-    elif guess_card["Health"] < target["Health"]:
-        hp_bg = "red"
-        hp_text = f"{guess_card['Health']} ↑"
-    else:
-        hp_bg = "red"
-        hp_text = f"{guess_card['Health']} ↓"
+        if gk == tk_:
+            bg = "green"
+        elif gk & tk_:
+            bg = "yellow"
+        else:
+            bg = "red"
 
-    hp_cell = make_cell(row_frame, hp_text, hp_bg)
-    hp_cell.grid(row=0, column=4, padx=2)
+        self.make_cell(row_frame, ", ".join(guess_card["Keywords"]) or "-", bg).grid(row=0, column=5, padx=2)
 
-    guess_kw = set(guess_card["Keywords"])
-    target_kw = set(target["Keywords"])
-
-    if guess_kw == target_kw:
-        kw_bg = "green"
-    elif guess_kw & target_kw:
-        kw_bg = "yellow"
-    else:
-        kw_bg = "red"
-
-    kw_text = ", ".join(guess_card["Keywords"]) or "-"
-    kw_cell = make_cell(row_frame, kw_text, kw_bg)
-    kw_cell.grid(row=0, column=5, padx=2)
-
-    if guess_card["Name"] == target["Name"]:
-        result_label.config(text=f"Congratulations! You guessed it: {target['Name']}", fg="green")
-        submit_btn.config(text="New game", command=new_game)
-    else:
-        result_label.config(text="Try again!", fg="blue")
-
-    canvas.yview_moveto(0)
+        # win
+        if guess_card["Name"] == self.target["Name"]:
+            self.result_label.config(text=f"You got it! {self.target['Name']}", fg="green")
+            self.submit_btn.config(text="New Game", command=self.new_game)
+        else:
+            self.result_label.config(text="Try again!", fg="blue")
 
 
-def new_game():
-    global target, table_frame, submit_btn, guessed_names, header_visible
-    header_visible = False
-    target = random.choice(cards)
-    guessed_names.clear()
-    for widget in table_frame.winfo_children():
-        widget.destroy()
-    submit_btn.config(text="Guess", command=check_guess)
-    result_label.config(text="")
-    entry.delete(0,tk.END)
-
-INPUT_WIDTH=600
-
-input_frame = tk.Frame(frame, width=INPUT_WIDTH)
-input_frame.pack()
-
-ENTRY_FONT=("Arial",14)
-
-entry = tk.Entry(input_frame, font=ENTRY_FONT,width=30)
-entry.pack(fill="x", ipady=6)
-entry.bind("<KeyRelease>", suggest)
-
-submit_btn = tk.Button(frame, text="Guess", command=check_guess)
-submit_btn.pack(pady=5)
-
-result_label = tk.Label(root, text="", font=("Arial", 12))
-result_label.pack(pady=5)
-
+# RUN
+root = tk.Tk()
+app = BGdleApp(root)
 root.mainloop()

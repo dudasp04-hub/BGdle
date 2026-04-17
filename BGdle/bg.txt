@@ -1,268 +1,269 @@
-Annoy-o-Tron;1;Mech;1;2;Taunt,Divine Shield
-Aureate Laureate;1;Pirate;1;1;Divine Shield,Battlecry
-Cord Puller;1;Mech;1;1;Divine Shield,Deathrattle
-Crackling Cyclone;1;Elemental;2;1;Divine Shield,Windfury
-Dune Dweller;1;Elemental;3;2;Battlecry
-Gluttonous Trogg;1;;2;3;
-Harmless Bonehead;1;Undead;1;1;Deathrattle
-Manasaber;1;Beast;4;1;Deathrattle,Taunt
-Ominous Seer;1;Demon,Naga;2;1;Battlecry
-Passenger;1;;2;2;Pass;
-Picky Eater;1;Demon;1;1;Battlecry
-Razorfen Geomancer;1;Quilboar;2;1;Battlecry,Blood Gem
-Risen Rider;1;Undead;2;1;Taunt,Reborn
-River Skipper;1;Murloc;1;1;
-Rot Hide Gnoll;1;Undead;1;4;
-Scarlet Survivor;1;Dragon;3;3;Divine Shield
-Southsea Busker;1;Pirate;3;1;Battlecry
-Sun-Bacon Relaxer;1;Quilboar;2;3;Blood Gem
-Surf n' Surf;1;Naga,Beast;1;1;Spellcraft,Deathrattle
-Twilight Hatchling;1;Dragon;1;1;Deathrattle
-Wrath Weaver;1;Demon;1;4;
-Alert Alarmist;2;Mech;1;1;Taunt,Deathrattle
-Blazing Skyfin;2;Murloc,Dragon;2;4;Battlecry
-Bristleback Bully;2;Quilboar;3;2;Taunt,Deathrattle,Blood Gem,Taunt
-Defiant Shipwright;2;Pirate;2;5;
-Eternal Knight;2;Undead;4;1;
-Expert Aviator;2;Murloc;3;4;Rally
-Fire Baller;2;Elemental;4;3;
-Freedealing Gambler;2;Pirate;3;3;
-Friendly Saloonkeeper;2;;3;4;Battlecry
-Gathering Stormer;2;Elemental;5;1;
-Generous Geomancer;2;Quilboar;1;1;Deathrattle,Blood Gem
-Glowgullet Warlord;2;Quilboar;2;2;Deathrattle,Taunt,Blood Gem
-Humming Bird;2;Beast;1;4;
-Intrepid Botanist;2;;3;4;
-Laboratory Assistant;2;Demon;3;4;Battlecry,Refresh
-Lava Lurker;2;Naga;2;5;Spellcraft
-Mechagnome Interpreter;2;Mech;2;3;Magnetic
-Metallic Hunter;2;Mech;2;1;Deathrattle
-Nerubian Deathswarmer;2;Undead;1;4;Battlecry
-Old Soul;2;Undead;3;4;
-Oozeling Gladiator;2;Elemental;2;2;Battlecry,Taunt
-Patient Scout;2;;1;1;Discover
-Prophet of the Boar;2;;2;3;Taunt,Blood Gem
-Reef Riffer;2;Naga;3;2;Spellcraft
-Scarlet Skull;2;Undead;2;1;Reborn,Deathrattle
-Sellemental;2;Elemental;3;3;
-Sewer Rat;2;Beast;3;2;Deathrattle,Taunt
-Shell Collector;2;Naga;4;3;Battlecry
-Sleepy Supporter;2;Dragon;4;3;Rally
-Snow Baller;2;Elemental;3;4;
-Soul Rewinder;2;Demon;4;1;
-Surfing Sylvar;2;Pirate;1;2;
-Tad;2;Murloc;2;2;
-Tarecgosa;2;Dragon;3;3;
-Tide Raiser;2;Naga;2;1;Taunt,Deathrattle
-Very Hungry Winterfinner;2;Murloc;2;5;Taunt
-Wanderer Cho;2;;4;3;Pass
-Accord-o-Tron;3;Mech;3;3;Magnetic
-Amber Guardian;3;Dragon;3;2;Taunt,Divine Shield
-Annoy-o-Module;3;Mech;2;4;Magnetic,Divine Shield,Taunt
-Auto Assembler;3;Mech;2;2;Magnetic,Deathrattle
-Black Chromadrake;3;Dragon;2;6;Battlecry
-Blue Chromadrake;3;Dragon;4;4;Battlecry
-Bottom Feeder;3;Murloc;3;4;
-Bristlemane Scrapsmith;3;Quilboar;4;4;Taunt,Blood Gem
-Bronze Chromadrake;3;Dragon;5;3;Battlecry
-Cadaver Caretaker;3;Undead;3;3;Deathrattle
-Deadly Spore;3;;1;1;Venomous
-Deep Blue Crooner;3;Naga;2;4;Spellcraft
-Deep-Sea Angler;3;Naga;2;3;Spellcraft,Taunt
-Deflect-o-Bot;3;Mech;3;2;Divine Shield
-Disguised Graverobber;3;;4;4;Battlecry
-Doting Dracthyr;3;Dragon;4;3;
-Dustbone Devastator;3;Undead;2;6;Rally
-Felemental;3;Elemental,Demon;3;3;Battlecry
-Floating Watcher;3;Demon;4;4;
-Green Chromadrake;3;Dragon;3;5;Battlecry
-Gunpowder Courier;3;Pirate;2;6;
-Handless Forsaken;3;Undead;2;1;Deathrattle,Reborn
-Hardy Orca;3;Beast;1;6;Taunt
-Jumping Jack;3;All;3;4;Pass
-King Bagurgle;3;Murloc;2;3;Battlecry
-Leeching Felhound;3;Demon;3;3;
-Lost City Looter;3;Pirate;1;1;Taunt
-Moon-Bacon Jazzer;3;Quilboar;1;3;Battlecry,Blood Gem
-Mummifier;3;Undead;5;2;Deathrattle,Reborn
-Orc-estra Conductor;3;;4;4;Battlecry
-Peggy Sturdybone;3;Pirate;2;1;
-Plunder Pal;3;Pirate;2;2;
-Prickly Piper;3;Quilboar;5;1;Deathrattle,Blood Gem
-Puddle Prancer;3;Murloc;4;4;Pass
-Pufferquil;3;Quilboar,Naga;2;6;Venomous
-Red Chromadrake;3;Dragon;6;2;Battlecry
-Roaring Recruiter;3;Dragon;2;8;
-Scourfin;3;Murloc;4;3;Deathrattle
-Shoalfin Mystic;3;Murloc;4;4;
-Skulking Bristlemane;3;Quilboar;5;2;Taunt,Deathrattle,Blood Gem
-Sly Raptor;3;Beast;1;3;Deathrattle
-Sprightly Scarab;3;Beast;3;1;Reborn,Windfury
-Technical Element;3;Elemental,Mech;5;6;Magnetic
-Timecap'n Hooktail;3;Dragon,Pirate;1;4;
-Waveling;3;Elemental;5;1;Deathrattle,Refresh
-Wheeled Crewmate;3;Pirate;6;3;Deathrattle
-Wildfire Elemental;3;Elemental;6;3;
-Abyssal Bruiser;4;Naga;1;1;Divine Shield
-Banana Slamma;4;Beast;3;6;
-Bigwit Bandit;4;Pirate;4;6;Rally
-Blade Collector;4;Pirate;3;2;
-Bream Counter;4;Murloc;4;4;
-Deepwater Chieftain;4;Murloc;3;2;Battlecry,Deathrattle
-Determined Defender;4;;5;5;Taunt,Deathrattle
-Devout Hellcaller;4;Demon;2;2;
-Diremuck Forager;4;Murloc;5;6;
-Dual-Wield Corsair;4;Pirate;2;4;
-Egg of the Endtimes;4;;0;5;
-En-Djinn Blazer;4;Elemental;5;5;Battlecry,Refresh
-Enchanted Sentinel;4;Mech;3;5;Magnetic
-Eternal Tycoon;4;Undead;2;6;Avenge
-Fearless Foodie;4;Quilboar;2;4;Blood Gem
-Feisty Freshwater;4;Elemental;6;4;Deathrattle,Refresh
-Flaming Enforcer;4;Elemental,Demon;4;5;
-Friendly Geist;4;Undead;6;3;Deathrattle
-Geomagus Roogug;4;Quilboar;4;6;Divine Shield,Blood Gem
-Grave Narrator;4;Undead;2;7;Avenge
-Heroic Underdog;4;;1;10;Stealth,Rally
-Hired Ritualist;4;Quilboar;3;6;Blood Gem
-Humon'gozz;4;;5;5;Divine Shield
-Hunting Tiger Shark;4;Beast;3;5;Battlecry,Discover
-Ichoron the Protector;4;Elemental;3;1;Divine Shield
-Imposing Percussionist;4;Demon;4;4;Battlecry,Discover
-Incubation Researcher;4;Dragon;2;8;Avenge
-Leyline Surfacer;4;Elemental;4;6;Battlecry,Deathrattle
-Lovesick Balladist;4;Pirate;3;2;Battlecry
-Malchezaar, Prince of Dance;4;Demon;5;4;Refresh
-Mama Mrrglton;4;Murloc;6;3;Battlecry
-Mantid King;4;;3;3;Pass,Venomous,Taunt,Divine Shield
-Marquee Ticker;4;Mech;1;5;
-Mirror Monster;4;All;4;4;Discover,Pass
-Monstrous Macaw;4;Beast;5;4;Rally,Deathrattle
-Papa Mrrglton;4;Murloc;3;6;Battlecry
-Persistent Poet;4;Dragon;2;3;Divine Shield
-Plaguerunner;4;Undead;4;2;Deathrattle
-Private Chef;4;Naga;5;4;Spellcraft,Pass
-Prized Promo-Drake;4;Dragon;1;1;
-Prosthetic Hand;4;Undead,Mech;3;1;Magnetic,Reborn
-Redtusk Thornraiser;4;Quilboar;1;6;Blood Gem,Reborn
-Refreshing Anomaly;4;Elemental;4;5;Battlecry,Refresh
-Rimescale Priestess;4;Naga;3;3;Spellcraft
-Roving Sailor;4;Pirate;7;3;Battlecry
-Rylak Metalhead;4;Beast;5;3;Taunt,Deathrattle,Battlecry
-San'layn Scribe;4;Undead;4;4;
-Seafloor Recruiter;4;Naga;3;5;Rally
-Shadowdancer;4;Demon;4;2;Taunt,Deathrattle
-Shifty Snake;4;Beast;6;1;Deathrattle
-Sin'dorei Straight Shot;4;;3;4;Divine Shield,Windfury,Rally,Reborn,Taunt
-Stomping Stegodon;4;Beast;3;3;Rally
-Tavern Tempest;4;Elemental;2;2;Battlecry
-Tortollan Blue Shell;4;;3;6;
-Trigore the Lasher;4;Beast;9;3;
-Tunnel Blaster;4;;3;7;Taunt,Deathrattle
-Waverider;4;Naga;2;8;Spellcraft,Windfury
-Woodland Defiler;4;Demon;5;6;Refresh
-Wyvern Outrider;4;Beast;2;8;Refresh
-Zesty Shaker;4;Naga;6;7;Spellcraft
-Air Revenant;5;Elemental;3;6;
-Ashen Corruptor;5;Demon;6;6;
-Bazaar Dealer;5;Demon;4;6;
-Bile Spitter;5;Murloc;1;10;Venomous,Rally
-Brann Bronzebeard;5;;2;4;Battlecry
-Brazen Buccameer;5;Pirate;4;4;
-Cataclysmic Harbinger;5;;6;10;
-Catacomb Crasher;5;Undead;6;10;
-Charging Czarina;5;Mech;6;2;Divine Shield
-Cousin Errgl;5;Murloc;5;5;
-Darkgaze Elder;5;Quilboar;5;6;Blood Gem
-Draconic Warden;5;Dragon;7;4;Battlecry,Deathrattle
-Drakkari Enchanter;5;;1;5;
-Drustfallen Butcher;5;Undead;2;9;Avenge
-Felfire Conjurer;5;Demon,Dragon;6;5;
-Firelands Fugitive;5;Elemental;5;7;Battlecry
-Gem Smuggler;5;Quilboar;4;5;Battlecry,Blood Gem
-Glowscale;5;Naga;4;6;Taunt,Spellcraft,Divine Shield
-Hog Watcher;5;;5;5;Battlecry,Blood Gem,Divine Shield
-Hot-Air Surveyor;5;Quilboar;4;8;Blood Gem
-Iridescent Skyblazer;5;Beast;3;8;
-Kangor's Apprentice;5;;3;6;Deathrattle
-Lantern Lava;5;Elemental;5;5;
-Leeroy the Reckless;5;;6;2;Deathrattle
-Living Azerite;5;Elemental;5;5;
-Lurking Leviathan;5;Beast;3;8;
-Maelstrom Emergent;5;Naga;2;7;
-Magnanimoose;5;Beast;5;2;Deathrattle
-Man'ari Messenger;5;Demon;9;6;Battlecry
-Mrglin' Burglar;5;Murloc;10;8;
-Nalaa the Redeemer;5;;5;7;
-Nightmare Par-tea Guest;5;All;3;3;Battlecry,Deathrattle
-Primalfin Lookout;5;Murloc;3;2;Battlecry,Discover
-Proud Privateer;5;Pirate;8;8;
-Ring Bearer;5;Naga,Dragon;3;8;
-Rodeo Performer;5;;3;4;Battlecry,Discover
-Scrap Scraper;5;Mech;6;5;Deathrattle,Magnetic
-Selfless Sightseer;5;Dragon;6;2;Battlecry
-Sewer Lord;5;Beast;4;6;Deathrattle,Taunt
-Shipwrecked Rascal;5;Pirate;5;4;Battlecry,Deathrattle
-Sinrunner Blanchy;5;Undead,Beast;4;4;Reborn
-Skeletal Strafer;5;Undead;6;6;Avenge
-Spiked Savior;5;Beast;8;2;Taunt,Reborn,Deathrattle
-Storm Splitter;5;Naga;5;5;Pass
-Support System;5;Mech;4;5;Divine Shield
-Three Lil' Quilboar;5;Quilboar;3;3;Deathrattle,Blood Gem
-Tichondrius;5;Demon;3;6;
-Titus Rivendare;5;;1;7;Deathrattle
-Tranquil Meditative;5;Naga;3;8;Spellcraft
-Twilight Broodmother;5;Dragon;7;4;Deathrattle,Taunt
-Twisted Wrathguard;5;Demon;4;4;Refresh
-Void Pup Trainer;5;Demon;6;6;Battlecry
-Well Wisher;5;;6;6;Spellcraft,Pass
-Wintergrasp Ghoul;5;Undead;5;3;Deathrattle
-Balinda Stonehearth;6;;6;6;
-Batty Terrorguard;6;Demon;6;2;
-Bristlebach;6;Quilboar;3;10;Avenge,Blood Gem
-Choral Mrrrglr;6;Murloc;6;6;
-Consummate Conqueror;6;Demon;9;7;
-Dark Dazzler;6;Demon;4;7;
-Dastardly Drust;6;Pirate;5;3;
-Deathly Striker;6;Undead;8;8;Avenge,Deathrattle
-EarthSong Shaman;6;Quilboar;4;5;Windfury,Blood Gem
-Elemental Surprise;6;Elemental;8;8;Divine Shield
-Eternal Summoner;6;Undead;8;1;Reborn,Deathrattle
-Falling Sky Golem;6;Mech;4;2;Divine Shield,Deathrattle
-Famished Felbat;6;Demon;9;5;
-Fire-forged Evoker;6;Dragon;8;5;
-Forsaken Weaver;6;Undead;3;8;
-Goldrinn, the Great Wolf;6;Beast;8;8;Deathrattle
-Groundbreaker;6;Naga;5;4;
-Ignition Specialist;6;Dragon;8;8;
-Junk Jouster;6;Mech;8;7;Magnetic
-Kalecgos, Arcane Aspect;6;Dragon;4;12;Battlecry
-Loyal Mobster;6;Quilboar;6;5;Blood Gem
-Magicfin Mycologist;6;Murloc;4;8;
-Moonsteel Juggernaut;6;Mech;6;6;Magnetic
-Nightbane, Ignited;6;Undead,Dragon;16;8;Taunt,Deathrattle
-One-Amalgam Tour Group;6;All;6;7;
-P-0UL-TR-0N;6;Mech,Beast;8;8;Avenge,Divine Shield
-Primitive Painter;6;Murloc;3;8;
-Rabid Panther;6;Beast;4;8;
-Ruthless Queensguard;6;Naga;3;3;Battlecry,Deathrattle,Rally
-Ship Jumper;6;Pirate;6;6;Deathrattle
-Ship Master Eudora;6;Pirate;10;5;Deathrattle
-Sky Admiral Rogers;6;Pirate;4;6;
-Tidemistress Athissa;6;Naga;6;7;
-Transport Reactor;6;Mech;1;1;Magnetic,Pass
-Ultraviolet Ascendant;6;Elemental;6;3;
-Vinespeaker;6;Quilboar;7;8;Deathrattle,Blood Gem
-Captain Sanders;7;Pirate;9;9;Battlecry
-Champion of Sargeras;7;Demon;10;10;Battlecry,Deathrattle
-Futurefin;7;Murloc;7;13;
-Highkeeper Ra;7;;6;6;Battlecry,Deathrattle,Rally
-Obsidian Ravager;7;Dragon;7;7;Rally
-Polarizing Beatboxer;7;Mech;5;10;Magnetic
-Sandy;7;;1;1;
-Sanguine Champion;7;Quilboar;18;3;Battlecry,Deathrattle,Blood Gem
-Sea Witch Zar'jira;7;Naga;4;5;Spellcraft
-Stalwart Kodo;7;Beast;16;32;
-Stitched Salvager;7;Undead;16;4;Deathrattle
-Stone Age Slab;7;Elemental;5;10;
-The Last One Standing;7;All;12;12;Rally
+Annoy-o-Tron;1;Mech;1;2;Taunt,Divine Shield;
+Aureate Laureate;1;Pirate;1;1;Divine Shield,Battlecry;
+Cord Puller;1;Mech;1;1;Divine Shield,Deathrattle;
+Crackling Cyclone;1;Elemental;2;1;Divine Shield,Windfury;
+Dune Dweller;1;Elemental;3;2;Battlecry;
+Flighty Scout;1;Murloc;3;3;;
+Gluttonous Trogg;1;;2;3;;
+Harmless Bonehead;1;Undead;1;1;Deathrattle;
+Manasaber;1;Beast;4;1;Deathrattle,Taunt;
+Ominous Seer;1;Demon,Naga;2;1;Battlecry;
+Passenger;1;;2;2;Pass;Duos
+Picky Eater;1;Demon;1;1;Battlecry;
+Razorfen Geomancer;1;Quilboar;2;1;Battlecry,Blood Gem;
+Risen Rider;1;Undead;2;1;Taunt,Reborn;
+River Skipper;1;Murloc;1;1;;
+Rot Hide Gnoll;1;Undead;1;4;;
+Scarlet Survivor;1;Dragon;3;3;Divine Shield;
+Southsea Busker;1;Pirate;3;1;Battlecry;
+Sun-Bacon Relaxer;1;Quilboar;2;3;Blood Gem;
+Surf n' Surf;1;Naga,Beast;1;1;Spellcraft,Deathrattle;
+Twilight Hatchling;1;Dragon;1;1;Deathrattle;
+Wrath Weaver;1;Demon;1;4;;
+Alert Alarmist;2;Mech;1;1;Taunt,Deathrattle;
+Blazing Skyfin;2;Murloc,Dragon;2;4;Battlecry;
+Bristleback Bully;2;Quilboar;3;2;Taunt,Deathrattle,Blood Gem,Taunt;
+Defiant Shipwright;2;Pirate;2;5;;
+Eternal Knight;2;Undead;4;1;;
+Expert Aviator;2;Murloc;3;4;Rally;
+Fire Baller;2;Elemental;4;3;;
+Freedealing Gambler;2;Pirate;3;3;;
+Friendly Saloonkeeper;2;;3;4;Battlecry;Duos
+Gathering Stormer;2;Elemental;5;1;;Duos
+Generous Geomancer;2;Quilboar;1;1;Deathrattle,Blood Gem;Duos
+Glowgullet Warlord;2;Quilboar;2;2;Deathrattle,Taunt,Blood Gem;
+Humming Bird;2;Beast;1;4;;
+Intrepid Botanist;2;;3;4;;
+Laboratory Assistant;2;Demon;3;4;Battlecry,Refresh;
+Lava Lurker;2;Naga;2;5;Spellcraft;
+Mechagnome Interpreter;2;Mech;2;3;Magnetic;
+Metallic Hunter;2;Mech;2;1;Deathrattle;
+Nerubian Deathswarmer;2;Undead;1;4;Battlecry;
+Old Soul;2;Undead;3;4;;
+Oozeling Gladiator;2;Elemental;2;2;Battlecry,Taunt;
+Patient Scout;2;;1;1;Discover;
+Prophet of the Boar;2;;2;3;Taunt,Blood Gem;
+Reef Riffer;2;Naga;3;2;Spellcraft;
+Scarlet Skull;2;Undead;2;1;Reborn,Deathrattle;
+Sellemental;2;Elemental;3;3;;
+Sewer Rat;2;Beast;3;2;Deathrattle,Taunt;
+Shell Collector;2;Naga;4;3;Battlecry;
+Sleepy Supporter;2;Dragon;4;3;Rally;
+Snow Baller;2;Elemental;3;4;;
+Soul Rewinder;2;Demon;4;1;;
+Surfing Sylvar;2;Pirate;1;2;;
+Tad;2;Murloc;2;2;;
+Tarecgosa;2;Dragon;3;3;;
+Tide Raiser;2;Naga;2;1;Taunt,Deathrattle;
+Very Hungry Winterfinner;2;Murloc;2;5;Taunt;
+Wanderer Cho;2;;4;3;Pass;Duos
+Accord-o-Tron;3;Mech;3;3;Magnetic;
+Amber Guardian;3;Dragon;3;2;Taunt,Divine Shield;
+Annoy-o-Module;3;Mech;2;4;Magnetic,Divine Shield,Taunt;
+Auto Assembler;3;Mech;2;2;Magnetic,Deathrattle;
+Black Chromadrake;3;Dragon;2;6;Battlecry;
+Blue Chromadrake;3;Dragon;4;4;Battlecry;
+Bottom Feeder;3;Murloc;3;4;;Duos
+Bristlemane Scrapsmith;3;Quilboar;4;4;Taunt,Blood Gem;
+Bronze Chromadrake;3;Dragon;5;3;Battlecry;
+Cadaver Caretaker;3;Undead;3;3;Deathrattle;
+Deadly Spore;3;;1;1;Venomous;
+Deep Blue Crooner;3;Naga;2;4;Spellcraft;
+Deep-Sea Angler;3;Naga;2;3;Spellcraft,Taunt;
+Deflect-o-Bot;3;Mech;3;2;Divine Shield;
+Disguised Graverobber;3;;4;4;Battlecry;
+Doting Dracthyr;3;Dragon;4;3;;Duos
+Dustbone Devastator;3;Undead;2;6;Rally;
+Felemental;3;Elemental,Demon;3;3;Battlecry;
+Floating Watcher;3;Demon;4;4;;
+Green Chromadrake;3;Dragon;3;5;Battlecry;
+Gunpowder Courier;3;Pirate;2;6;;
+Handless Forsaken;3;Undead;2;1;Deathrattle,Reborn;
+Hardy Orca;3;Beast;1;6;Taunt;
+Jumping Jack;3;All;3;4;Pass;Duos
+King Bagurgle;3;Murloc;2;3;Battlecry;
+Leeching Felhound;3;Demon;3;3;;
+Lost City Looter;3;Pirate;1;1;Taunt;
+Moon-Bacon Jazzer;3;Quilboar;1;3;Battlecry,Blood Gem;
+Mummifier;3;Undead;5;2;Deathrattle,Reborn;
+Orc-estra Conductor;3;;4;4;Battlecry;Duos
+Peggy Sturdybone;3;Pirate;2;1;;
+Plunder Pal;3;Pirate;2;2;;Duos
+Prickly Piper;3;Quilboar;5;1;Deathrattle,Blood Gem;
+Puddle Prancer;3;Murloc;4;4;Pass;Duos
+Pufferquil;3;Quilboar,Naga;2;6;Venomous;
+Red Chromadrake;3;Dragon;6;2;Battlecry;
+Roaring Recruiter;3;Dragon;2;8;;
+Scourfin;3;Murloc;4;3;Deathrattle;
+Shoalfin Mystic;3;Murloc;4;4;;
+Skulking Bristlemane;3;Quilboar;5;2;Taunt,Deathrattle,Blood Gem;
+Sly Raptor;3;Beast;1;3;Deathrattle;
+Sprightly Scarab;3;Beast;3;1;Reborn,Windfury;
+Technical Element;3;Elemental,Mech;5;6;Magnetic;
+Timecap'n Hooktail;3;Dragon,Pirate;1;4;;
+Waveling;3;Elemental;5;1;Deathrattle,Refresh;
+Wheeled Crewmate;3;Pirate;6;3;Deathrattle;Duos
+Wildfire Elemental;3;Elemental;6;3;;
+Abyssal Bruiser;4;Naga;1;1;Divine Shield;
+Banana Slamma;4;Beast;3;6;;
+Bigwit Bandit;4;Pirate;4;6;Rally;
+Blade Collector;4;Pirate;3;2;;
+Bream Counter;4;Murloc;4;4;;
+Deepwater Chieftain;4;Murloc;3;2;Battlecry,Deathrattle;
+Determined Defender;4;;5;5;Taunt,Deathrattle;
+Devout Hellcaller;4;Demon;2;2;;
+Diremuck Forager;4;Murloc;5;6;;
+Dual-Wield Corsair;4;Pirate;2;4;;
+Egg of the Endtimes;4;;0;5;;
+En-Djinn Blazer;4;Elemental;5;5;Battlecry,Refresh;
+Enchanted Sentinel;4;Mech;3;5;Magnetic;
+Eternal Tycoon;4;Undead;2;6;Avenge;
+Fearless Foodie;4;Quilboar;2;4;Blood Gem;
+Feisty Freshwater;4;Elemental;6;4;Deathrattle,Refresh;Duos
+Flaming Enforcer;4;Elemental,Demon;4;5;;
+Friendly Geist;4;Undead;6;3;Deathrattle;
+Geomagus Roogug;4;Quilboar;4;6;Divine Shield,Blood Gem;
+Grave Narrator;4;Undead;2;7;Avenge;Duos
+Heroic Underdog;4;;1;10;Stealth,Rally;
+Hired Ritualist;4;Quilboar;3;6;Blood Gem;
+Humon'gozz;4;;5;5;Divine Shield;
+Hunting Tiger Shark;4;Beast;3;5;Battlecry,Discover;
+Ichoron the Protector;4;Elemental;3;1;Divine Shield;
+Imposing Percussionist;4;Demon;4;4;Battlecry,Discover;
+Incubation Researcher;4;Dragon;2;8;Avenge;
+Leyline Surfacer;4;Elemental;4;6;Battlecry,Deathrattle;
+Lovesick Balladist;4;Pirate;3;2;Battlecry;
+Malchezaar, Prince of Dance;4;Demon;5;4;Refresh;
+Mama Mrrglton;4;Murloc;6;3;Battlecry;
+Mantid King;4;;3;3;Pass,Venomous,Taunt,Divine Shield;Duos
+Marquee Ticker;4;Mech;1;5;;
+Mirror Monster;4;All;4;4;Discover,Pass;Duos
+Monstrous Macaw;4;Beast;5;4;Rally,Deathrattle;
+Papa Mrrglton;4;Murloc;3;6;Battlecry;
+Persistent Poet;4;Dragon;2;3;Divine Shield;
+Plaguerunner;4;Undead;4;2;Deathrattle;
+Private Chef;4;Naga;5;4;Spellcraft,Pass;Duos
+Prized Promo-Drake;4;Dragon;1;1;;
+Prosthetic Hand;4;Undead,Mech;3;1;Magnetic,Reborn;
+Redtusk Thornraiser;4;Quilboar;1;6;Blood Gem,Reborn;
+Refreshing Anomaly;4;Elemental;4;5;Battlecry,Refresh;
+Rimescale Priestess;4;Naga;3;3;Spellcraft;
+Roving Sailor;4;Pirate;7;3;Battlecry;
+Rylak Metalhead;4;Beast;5;3;Taunt,Deathrattle,Battlecry;
+San'layn Scribe;4;Undead;4;4;;Duos
+Seafloor Recruiter;4;Naga;3;5;Rally;
+Shadowdancer;4;Demon;4;2;Taunt,Deathrattle;
+Shifty Snake;4;Beast;6;1;Deathrattle;Duos
+Sin'dorei Straight Shot;4;;3;4;Divine Shield,Windfury,Rally,Reborn,Taunt;
+Stomping Stegodon;4;Beast;3;3;Rally;
+Tavern Tempest;4;Elemental;2;2;Battlecry;
+Tortollan Blue Shell;4;;3;6;;
+Trigore the Lasher;4;Beast;9;3;;
+Tunnel Blaster;4;;3;7;Taunt,Deathrattle;
+Waverider;4;Naga;2;8;Spellcraft,Windfury;
+Woodland Defiler;4;Demon;5;6;Refresh;
+Wyvern Outrider;4;Beast;2;8;Refresh;
+Zesty Shaker;4;Naga;6;7;Spellcraft;
+Air Revenant;5;Elemental;3;6;;
+Ashen Corruptor;5;Demon;6;6;;
+Bazaar Dealer;5;Demon;4;6;;
+Bile Spitter;5;Murloc;1;10;Venomous,Rally;
+Brann Bronzebeard;5;;2;4;Battlecry;
+Brazen Buccameer;5;Pirate;4;4;;
+Cataclysmic Harbinger;5;;6;10;;
+Catacomb Crasher;5;Undead;6;10;;
+Charging Czarina;5;Mech;6;2;Divine Shield;
+Cousin Errgl;5;Murloc;5;5;;
+Darkgaze Elder;5;Quilboar;5;6;Blood Gem;
+Draconic Warden;5;Dragon;7;4;Battlecry,Deathrattle;
+Drakkari Enchanter;5;;1;5;;
+Drustfallen Butcher;5;Undead;2;9;Avenge;
+Felfire Conjurer;5;Demon,Dragon;6;5;;
+Firelands Fugitive;5;Elemental;5;7;Battlecry;
+Gem Smuggler;5;Quilboar;4;5;Battlecry,Blood Gem;
+Glowscale;5;Naga;4;6;Taunt,Spellcraft,Divine Shield;
+Hog Watcher;5;;5;5;Battlecry,Blood Gem,Divine Shield;
+Hot-Air Surveyor;5;Quilboar;4;8;Blood Gem;
+Iridescent Skyblazer;5;Beast;3;8;;
+Kangor's Apprentice;5;;3;6;Deathrattle;
+Lantern Lava;5;Elemental;5;5;;
+Leeroy the Reckless;5;;6;2;Deathrattle;
+Living Azerite;5;Elemental;5;5;;
+Lurking Leviathan;5;Beast;3;8;;
+Maelstrom Emergent;5;Naga;2;7;;
+Magnanimoose;5;Beast;5;2;Deathrattle;Duos
+Man'ari Messenger;5;Demon;9;6;Battlecry;Duos
+Mrglin' Burglar;5;Murloc;10;8;;
+Nalaa the Redeemer;5;;5;7;;
+Nightmare Par-tea Guest;5;All;3;3;Battlecry,Deathrattle;
+Primalfin Lookout;5;Murloc;3;2;Battlecry,Discover;
+Proud Privateer;5;Pirate;8;8;;
+Ring Bearer;5;Naga,Dragon;3;8;;
+Rodeo Performer;5;;3;4;Battlecry,Discover;
+Scrap Scraper;5;Mech;6;5;Deathrattle,Magnetic;
+Selfless Sightseer;5;Dragon;6;2;Battlecry;Duos
+Sewer Lord;5;Beast;4;6;Deathrattle,Taunt;
+Shipwrecked Rascal;5;Pirate;5;4;Battlecry,Deathrattle;
+Sinrunner Blanchy;5;Undead,Beast;4;4;Reborn;
+Skeletal Strafer;5;Undead;6;6;Avenge;
+Spiked Savior;5;Beast;8;2;Taunt,Reborn,Deathrattle;
+Storm Splitter;5;Naga;5;5;Pass;Duos
+Support System;5;Mech;4;5;Divine Shield;Duos
+Three Lil' Quilboar;5;Quilboar;3;3;Deathrattle,Blood Gem;
+Tichondrius;5;Demon;3;6;;
+Titus Rivendare;5;;1;7;Deathrattle;
+Tranquil Meditative;5;Naga;3;8;Spellcraft;
+Twilight Broodmother;5;Dragon;7;4;Deathrattle,Taunt;
+Twisted Wrathguard;5;Demon;4;4;Refresh;
+Void Pup Trainer;5;Demon;6;6;Battlecry;
+Well Wisher;5;;6;6;Spellcraft,Pass;Duos
+Wintergrasp Ghoul;5;Undead;5;3;Deathrattle;
+Balinda Stonehearth;6;;6;6;;
+Batty Terrorguard;6;Demon;6;2;;
+Bristlebach;6;Quilboar;3;10;Avenge,Blood Gem;
+Choral Mrrrglr;6;Murloc;6;6;;
+Consummate Conqueror;6;Demon;9;7;;
+Dark Dazzler;6;Demon;4;7;;Duos
+Dastardly Drust;6;Pirate;5;3;;
+Deathly Striker;6;Undead;8;8;Avenge,Deathrattle;
+EarthSong Shaman;6;Quilboar;4;5;Windfury,Blood Gem;
+Elemental Surprise;6;Elemental;8;8;Divine Shield;
+Eternal Summoner;6;Undead;8;1;Reborn,Deathrattle;
+Falling Sky Golem;6;Mech;4;2;Divine Shield,Deathrattle;
+Famished Felbat;6;Demon;9;5;;
+Fire-forged Evoker;6;Dragon;8;5;;
+Forsaken Weaver;6;Undead;3;8;;
+Goldrinn, the Great Wolf;6;Beast;8;8;Deathrattle;
+Groundbreaker;6;Naga;5;4;;
+Ignition Specialist;6;Dragon;8;8;;
+Junk Jouster;6;Mech;8;7;Magnetic;
+Kalecgos, Arcane Aspect;6;Dragon;4;12;Battlecry;
+Loyal Mobster;6;Quilboar;6;5;Blood Gem;Duos
+Magicfin Mycologist;6;Murloc;4;8;;
+Moonsteel Juggernaut;6;Mech;6;6;Magnetic;
+Nightbane, Ignited;6;Undead,Dragon;16;8;Taunt,Deathrattle;
+One-Amalgam Tour Group;6;All;6;7;;
+P-0UL-TR-0N;6;Mech,Beast;8;8;Avenge,Divine Shield;
+Primitive Painter;6;Murloc;3;8;;
+Rabid Panther;6;Beast;4;8;;
+Ruthless Queensguard;6;Naga;3;3;Battlecry,Deathrattle,Rally;
+Ship Jumper;6;Pirate;6;6;Deathrattle;
+Ship Master Eudora;6;Pirate;10;5;Deathrattle;
+Sky Admiral Rogers;6;Pirate;4;6;;
+Tidemistress Athissa;6;Naga;6;7;;
+Transport Reactor;6;Mech;1;1;Magnetic,Pass;Duos
+Ultraviolet Ascendant;6;Elemental;6;3;;
+Vinespeaker;6;Quilboar;7;8;Deathrattle,Blood Gem;
+Captain Sanders;7;Pirate;9;9;Battlecry;
+Champion of Sargeras;7;Demon;10;10;Battlecry,Deathrattle;
+Futurefin;7;Murloc;7;13;;
+Highkeeper Ra;7;;6;6;Battlecry,Deathrattle,Rally;
+Obsidian Ravager;7;Dragon;7;7;Rally;
+Polarizing Beatboxer;7;Mech;5;10;Magnetic;
+Sandy;7;;1;1;;Duos
+Sanguine Champion;7;Quilboar;18;3;Battlecry,Deathrattle,Blood Gem;
+Sea Witch Zar'jira;7;Naga;4;5;Spellcraft;
+Stalwart Kodo;7;Beast;16;32;;
+Stitched Salvager;7;Undead;16;4;Deathrattle;
+Stone Age Slab;7;Elemental;5;10;;
+The Last One Standing;7;All;12;12;Rally;
