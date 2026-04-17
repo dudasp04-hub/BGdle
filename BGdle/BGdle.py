@@ -1,6 +1,15 @@
 import tkinter as tk
 import random
+import os
+import sys
 
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS  # PyInstaller temp folder
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 class BGdleApp:
     CELL_SIZE = 100
@@ -10,7 +19,7 @@ class BGdleApp:
         self.root = root
         self.root.title("BGdle")
 
-        self.cards = self.load_cards("bg.txt")
+        self.cards = self.load_cards(resource_path("bg.txt"))
         self.filtered_cards = []
         self.target = None
         self.guessed_names = set()
