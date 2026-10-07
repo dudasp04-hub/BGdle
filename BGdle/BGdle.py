@@ -184,7 +184,7 @@ class BGdleApp:
         suggestions = [
             c["Name"] for c in self.filtered_cards
             if typed in c["Name"].lower() and c["Name"] not in self.guessed_names
-        ][:5]
+        ]
 
         if not suggestions:
             return
